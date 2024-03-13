@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Demo
     let iter = generateDigitsOfPi();
 
     let output = document.querySelector("div");
