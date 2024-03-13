@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let output = document.querySelector("div");
     (function displayTenNextDigits() {
         let digits = "";
-        for (let i = 0; i < 10; i++) digits += iter.next().value;
+        for (let i = 0; i < 100; i++) digits += iter.next().value;
         output.insertAdjacentHTML("beforeend", digits);
         requestAnimationFrame(displayTenNextDigits);
     })();
