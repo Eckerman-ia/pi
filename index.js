@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let digits = "";
         for (let i = 0; i < 500; i++) digits += iter.next().value;
         output.insertAdjacentHTML("beforeend", digits);
+        scrollTo(0, document.body.scrollHeight);
         requestAnimationFrame(displayTenNextDigits);
     })();
 });
