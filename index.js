@@ -22,15 +22,13 @@ let output = document.querySelector("div");
 (function displayTenNextDigits() {
     let digits = "";
     for (let i = 0; i < 5; i++) digits += iter.next().value;
-    totaldigits = totaldigits + 1;
+    totaldigits = totaldigits + 5;
     console.log(totaldigits)
     document.title = "Infinite Pi Calculator! (Digits Calculated: " + totaldigits + ")";
     output.insertAdjacentHTML("beforeend", digits);
     scrollTo(0, document.body.scrollHeight);
-  var copyText = output;
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(copyText.value);
     alert(output)
+
+  
     requestAnimationFrame(displayTenNextDigits);
 })();
