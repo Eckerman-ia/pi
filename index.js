@@ -13,7 +13,7 @@ function * generateDigitsOfPi() {
         t *= u;
     }
 }
-
+var totaldigits = 0
 // Demo
 let iter = generateDigitsOfPi();
 
@@ -21,6 +21,9 @@ let output = document.querySelector("div");
 (function displayTenNextDigits() {
     let digits = "";
     for (let i = 0; i < 10; i++) digits += iter.next().value;
+    totaldigits = totaldigits + 10
+    console.log(totaldigits)
+    alert(totaldigits)
     output.insertAdjacentHTML("beforeend", digits);
     scrollTo(0, document.body.scrollHeight);
     requestAnimationFrame(displayTenNextDigits);
