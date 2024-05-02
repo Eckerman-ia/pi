@@ -29,7 +29,7 @@ let output = document.querySelector("div");
     alert(totaldigits);
     alertdigits = 0;
     }
-    document.title = totaldigits;
+    document.title = "Pi Calculator! (digits calculated: " + totaldigits + ")";
     output.insertAdjacentHTML("beforeend", digits);
     scrollTo(0, document.body.scrollHeight);
     requestAnimationFrame(displayTenNextDigits);
