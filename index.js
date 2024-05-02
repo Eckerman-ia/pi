@@ -21,8 +21,8 @@ let iter = generateDigitsOfPi();
 let output = document.querySelector("div");
 (function displayTenNextDigits() {
     let digits = "";
-    for (let i = 0; i < 10; i++) digits += iter.next().value;
-    totaldigits = totaldigits + 10;
+    for (let i = 0; i < 1; i++) digits += iter.next().value;
+    totaldigits = totaldigits + 1;
     console.log(totaldigits)
     document.title = "Infinite Pi Calculator! (Digits Calculated: " + totaldigits + ")";
     output.insertAdjacentHTML("beforeend", digits);
