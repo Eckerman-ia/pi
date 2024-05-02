@@ -26,9 +26,6 @@ let output = document.querySelector("div");
     console.log(totaldigits)
     document.title = "Infinite Pi Calculator! (Digits Calculated: " + totaldigits + ")";
     output.insertAdjacentHTML("beforeend", digits);
-    scrollTo(0, document.body.scrollHeight);
-    alert(output)
-
-  
+    scrollTo(0, document.body.scrollHeight);  
     requestAnimationFrame(displayTenNextDigits);
 })();
